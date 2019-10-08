@@ -44,7 +44,8 @@ class FrontController
     {
         if (!is_callable($callable)) {
             throw new InvalidArgumentException(
-                "The callable has not been defined.");
+                "The callable has not been defined."
+            );
         }
         $this->callable = $callable;
 
