@@ -7,9 +7,9 @@
       <?= $title ?>
     </h1>
     <ul>
-      <?php foreach($array as $value): ?>
+        <?php foreach ($array as $value) : ?>
         <li><?= $value ?>
-      <?php endforeach ?>
+        <?php endforeach ?>
     </ul>
   </body>
 </html>
