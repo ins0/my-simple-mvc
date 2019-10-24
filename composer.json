@@ -16,9 +16,6 @@
     "autoload": {
         "classmap": [
             "src/"
-        ],
-        "files": [
-            "helpers/view.php"
         ]
     }
 }

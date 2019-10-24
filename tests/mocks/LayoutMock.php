@@ -1,0 +1,1 @@
+foo <?= $default_content; ?>

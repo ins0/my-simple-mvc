@@ -3,15 +3,16 @@
 namespace App\Controllers;
 
 use App\Models\FooBarBaz;
-use App\Controllers\Controller;
+use App\ViewRenderer\ViewRenderer;
 
 class RootController extends Controller
 {
     public function get()
     {
-        echo view('root', [
+        echo ViewRenderer::renderTemplate('root', [
+            'page_title' => 'hello world example',
             'title' => 'hello world',
             'array' => FooBarBaz::get(),
-        ]);
+        ], "default");
     }
 }
